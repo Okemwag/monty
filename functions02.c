@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
 
 * pall - prints the value of all items on the stack
@@ -5,6 +6,16 @@
 * @line_number: line number of instruction
 * Return: void
 */
+=======
+#include "monty.h"
+
+/**
+ * pall - prints the value of all items on the stack
+ * @stack: pointer to stack
+ * @line_number: line number of instruction
+ * Return: void
+ */
+>>>>>>> 3c2bc5c65240f4ba21d11e5cfed87686f8d48436
 void pall(stack_t **stack, unsigned int __attribute__((unused))line_number)
 {
 	stack_t *current = *stack;
@@ -20,17 +31,29 @@ void pall(stack_t **stack, unsigned int __attribute__((unused))line_number)
 }
 
 /**
+<<<<<<< HEAD
 * pint - prints value at the top of the stack, plus new line
 * @stack: pointer to stack
 * @line_number: line number of instruction
 * REturn: void
 */
+=======
+ * pint - prints value at the top of the stack, plus new line
+ * @stack: pointer to stack
+ * @line_number: line number of instruction
+ * Return: void
+ */
+>>>>>>> 3c2bc5c65240f4ba21d11e5cfed87686f8d48436
 void pint(stack_t **stack, unsigned int line_number)
 
 {
 	if (*stack == NULL)
 	{
+<<<<<<< HEAD
 		fprintf(stderr,"L%d: can't pint, stack empty\n", line_number);
+=======
+		fprintf(stderr, "L%d: can't pint, stack empty\n", line_number);
+>>>>>>> 3c2bc5c65240f4ba21d11e5cfed87686f8d48436
 		frees(*stack);
 		exit(EXIT_FAILURE);
 	}
@@ -38,12 +61,22 @@ void pint(stack_t **stack, unsigned int line_number)
 }
 
 
+<<<<<<< HEAD
 /**
 * pchar - prints the char at the top of the stack
 * @stack: pointer to stack
 * @line_number: line number of instruction
 * Return: void
 */
+=======
+
+/**
+ * pchar - prints the char at the top of the stack
+ * @stack: pointer to stack
+ * @line_number: line number of instruction
+ * Return: void
+ */
+>>>>>>> 3c2bc5c65240f4ba21d11e5cfed87686f8d48436
 void pchar(stack_t **stack, unsigned int line_number)
 {
 	int c;
@@ -65,11 +98,19 @@ void pchar(stack_t **stack, unsigned int line_number)
 }
 
 /**
+<<<<<<< HEAD
 * pstr - prints the string starting from the top of the stack
 * @stack: pointer to stack
 * line_number: line number of instruction
 * REturn: void
 */
+=======
+ * pstr - prints the string starting from the top of the stack
+ * @stack: pointer to stack
+ * @line_number: line number of instruction
+ * Return: void
+ */
+>>>>>>> 3c2bc5c65240f4ba21d11e5cfed87686f8d48436
 void pstr(stack_t **stack, unsigned int line_number)
 {
 	int c;
@@ -82,11 +123,19 @@ void pstr(stack_t **stack, unsigned int line_number)
 		c = current->n; /* current node's data */
 		if (c > 0 && c <= 127)
 		{
+<<<<<<< HEAD
 current = current->next;
+=======
+			current = current->next;
+>>>>>>> 3c2bc5c65240f4ba21d11e5cfed87686f8d48436
 			putchar(c);
 		}
 		else
 			break;
 	}
 	putchar('\n');
+<<<<<<< HEAD
 } 
+=======
+}
+>>>>>>> 3c2bc5c65240f4ba21d11e5cfed87686f8d48436
